@@ -1,0 +1,52 @@
+.grid-header-row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5rem repeat(6, 1fr);
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 1rem;
+  padding-inline-end: 1rem;
+  .grid-cell-header {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0.5rem;
+    .header-day {
+      font-size: 1.5rem;
+    }
+    .header-date {
+      font-size: 1.2rem;
+      opacity: 0.4;
+    }
+  }
+}
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5rem repeat(6, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  overflow-y: auto;
+
+  .grid-cell {
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background: white;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-cell-time {
+    font-size: 1rem;
+    display: flex;
+    width: 2rem;
+    align-items: center;
+    justify-content: start;
+    padding: 0.5rem;
+  }
+  .grid-cell-friday {
+    background: #eef0f0;
+  }
+}
